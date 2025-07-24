@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kyro "The Star"</title>
+  <style>
+    /* Make sure body & html fill the screen */
+    html, body {
+      margin: 0; padding: 0;
+      height: 100%;
+      overflow: hidden; /* prevent scrolling */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
+      background: black; /* fallback */
+      position: relative;
+    }
+
+    /* Content container, centered */
+    .content {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 2rem;
+      background: rgba(30, 30, 47, 0.5); /* semi-transparent overlay */
+      box-sizing: border-box;
+    }
+
+    .banner {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.7);
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.2rem;
+    }
+    p.bio {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      max-width: 600px;
+      text-align: center;
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      width: 100%;
+      max-width: 400px;
+      margin-bottom: 2rem;
+    }
+    .link-item {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 1rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      color: white;
+      font-weight: 600;
+      transition: background 0.3s ease;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+    }
+    .link-item:hover {
+      background: #6c63ff;
+      box-shadow: 0 6px 12px rgba(108, 99, 255, 0.7);
+    }
+
+    /* Button style */
+    .btn-link {
+      background: #6c63ff;
+      color: white;
+      border: none;
+      padding: 1rem 1.5rem;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(108, 99, 255, 0.6);
+      transition: background 0.3s ease;
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+    .btn-link:hover {
+      background: #5548cc;
+    }
+  </style>
+</head>
+<body>
+  <!-- Main content -->
+  <div class="content">
+    <img
+      class="banner"
+      src="https://images8.alphacoders.com/943/thumb-1920-943215.png"
+      alt="Your Custom Banner"
+    />
+
+    <h1>Kyro</h1>
+    <p class="bio">
+      I’m a developer, creator, and all-around Coding Skilled Person.<br />
+      DM me for work on Discord — almost always available.
+    </p>
+
+    <div class="links">
+      <a
+        class="link-item"
+        href="https://discord.gg/QQVePPsP32"
+        target="_blank"
+        rel="noopener noreferrer"
+        >Join My Discord Server</a
+      >
+      <a
+        class="link-item"
+        href="https://discord.com/users/1005248474750652557"
+        target="_blank"
+        rel="noopener noreferrer"
+        >DM Me on Discord</a
+      >
+    </div>
+
+    <button class="btn-link" onclick="window.open('https://example.com', '_blank')">
+      Visit My Friend Fallen
+    </button>
+  </div>
+</body>
+</html>
